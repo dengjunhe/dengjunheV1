@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Deng J.H.|DMServer|CEO</title>
+    <meta name="description" content="这里是Deng J.H.的个人主页，目前站长仍在学习中，每天抽出时间来看书学习，励志成为一个技术很牛的程序员。">
+    <meta name="keywords" content="风也温柔,个人主页,程序员">
+    <link rel="icon" type="image/ico" href="https://pic.dogimg.com/2022/04/09/625153c57070a.jpg">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script>
+        let meting_music_api = "https://api.mizore.cn/meting/api.php";
+        let music_server = "netease";
+        let music_type = "song";
+        let music_id = "28668238";
+        let music_order = "list";
+        let music_mini = false;
+        let music_fixed = true;
+        let music_volume = 0.7;
+        let music_autoplay = true;
+        let music_loop = "all";
+    </script>
+</head>
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>Hi，我是Deng J.H.，这是我的个人主页</h1>
+                <p>感谢您可以访问我的网站，励志成为厉害的程序猿，由DMServer强力驱动
+                </p>
+                <p>
+                    我很喜欢的一句话：<br>I'am Alone But not Loney<br> 我是孤身一身但不孤独
+                </p>
+                <p>Catch me:</p>
+                <div class="row">
+                    <button id="kaygb-blog" class="btn btn-primary col-lg-4">BLOG</button>
+                    <a href="https://www.dmsbbs.xyz" id="kaygb-blog-a" target="_blank" class="btn btn-primary col-lg-4">BLOG</a>
+                    <a href="https://github.com/dengjunhe" target="_blank" class="btn btn-secondary col-lg-4">GitHub</a>
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=i@eas1.cn" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">Send a Mail</a>
+                    <button id="kaygb-mail" class="btn btn-success col-lg-4">给我寄一份邮件(必回)</button>
+                </div>
+                <h4 class="mt-4">请你看好 我的变化</h4>
+                <ul class="social mt-1">
+                    <li><a href="#"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
+                </ul>
+                <footer>
+                    <p>Copyright 2022 - Now <a href="https://space.bilibili.com/323900695" target="_blank">Bilibili账户</a>
+                        <br>Mod by DMServer
+                        <a href="https://www.dmserver.site" target="_blank" rel="">DMS</a>
+                    </p>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="aplayer" class="aplayer" data-order="random" data-id="20173709" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.8"></div>
+    <!-- aplayer -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
+    <script>
+        $('#kaygb-blog').on('click', function() {
+            layer.open({
+                type: 2,
+                title: 'DMSBBS[目前测试中]',
+                shadeClose: true,
+                shade: false,
+                maxmin: true,
+                area: ['80%', '100%'],
+                content: 'https://www.dmsbbs.xyz'
+            });
+        });
+        $('#kaygb-mail').on('click', function() {
+            layer.open({
+                type: 2,
+                title: 'Mail',
+                shadeClose: true,
+                shade: false,
+                maxmin: true,
+                area: ['80%', '100%'],
+                content: '//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=dengjunhe@dmserver.site'
+            });
+        });
+    </script>
+</html>
